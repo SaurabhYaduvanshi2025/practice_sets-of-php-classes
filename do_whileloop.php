@@ -12,19 +12,18 @@ do {
 
 <br>
 
-<?php 
+<?php
+$attempts = 0;
+$diceRoll = 0;
 
-$attempt = 0;
-$display = 0;
- 
-do{
-  $display = rand (1, 10);
-  $attempt++;
+do {
+    // 1 se 6 ke beech random number generate hoga
+    $diceRoll = rand(1, 6); 
+    $attempts++; // Attempt count badhayenge
+    
+    echo "Attempt $attempts: Rolled a $diceRoll <br>";
 
-  echo "Attempt: $attempt - Displayed number: $display" . "<br>";
-}while ($display != 10);
+} while ($diceRoll != 6); // Jab tak 6 nahi aata, loop chalta rahega
 
-echo "<strong>It took $attempt attempts to display the number 10.</strong>" . "<br>";
-
-
+echo "<strong>Success! Got 6 in $attempts attempts.</strong>";
 ?>
