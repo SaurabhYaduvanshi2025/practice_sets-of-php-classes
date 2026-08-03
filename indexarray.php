@@ -37,34 +37,64 @@
 
 
 
-$students = [
+// $students = [
 
-    [
-        "name" => "Rahul",
-        "age" => 22,
-        "city" => "Delhi"
-    ],
+//     [
+//         "name" => "Rahul",
+//         "age" => 22,
+//         "city" => "Delhi"
+//     ],
 
-    [
-        "name" => "Amit",
-        "age" => 21,
-        "city" => "Mumbai"
-    ],
+//     [
+//         "name" => "Amit",
+//         "age" => 21,
+//         "city" => "Mumbai"
+//     ],
 
-    [
-        "name" => "Saurabh",
-        "age" => 25,
-        "city" => "Noida"
+//     [
+//         "name" => "Saurabh",
+//         "age" => 25,
+//         "city" => "Noida"
+//     ]
+
+// ];
+
+
+// foreach ($students as $student) {
+//     echo "Name:" .$student["name"]. "<br>";
+//     echo "Age:" .$student["age"]. "<br>";
+//     echo "City:" .$student["city"]. "<br>";
+//     echo "<br>";
+// }
+
+
+$company = [
+    "employees" => [
+        [
+            "name" => "Rahul",
+            "skills" => ["PHP", "JavaScript"]
+        ],
+        [
+            "name" => "Amit",
+            "skills" => ["Laravel", "MySQL"]
+        ]
     ]
-
 ];
 
 
-foreach ($students as $student) {
-    echo "Name:" .$student["name"]. "<br>";
-    echo "Age:" .$student["age"]. "<br>";
-    echo "City:" .$student["city"]. "<br>";
+foreach ($company["employees"] as $employee) {
+
+    echo  $employee["name"] . "<br>";
+
+
+    foreach ($employee["skills"] as $skill) {
+        echo "-" .$skill."<br>";
+    }
+
     echo "<br>";
+
 }
+
+
 
 ?>
