@@ -68,32 +68,55 @@
 // }
 
 
-$company = [
-    "employees" => [
-        [
-            "name" => "Rahul",
-            "skills" => ["PHP", "JavaScript"]
-        ],
-        [
-            "name" => "Amit",
-            "skills" => ["Laravel", "MySQL"]
-        ]
-    ]
+// $company = [
+//     "employees" => [
+//         [
+//             "name" => "Rahul",
+//             "skills" => ["PHP", "JavaScript"]
+//         ],
+//         [
+//             "name" => "Amit",
+//             "skills" => ["Laravel", "MySQL"]
+//         ]
+//     ]
+// ];
+
+
+// foreach ($company["employees"] as $employee) {
+
+//     echo  $employee["name"] . "<br>";
+
+
+//     foreach ($employee["skills"] as $skill) {
+//         echo "-" .$skill."<br>";
+//     }
+
+//     echo "<br>";
+
+// }
+
+
+$user = [
+    [1,"Saurabh","nangloi","Delhi"],
+    [2,"Amit","dwarka","Delhi"],
+    [3,"Rahul","rajdhani park","Delhi"],
+    [4,"Rohit","nangloi","Delhi"],
+    [5,"Ramesh","Piragarihi","Delhi"],
+    [6,"Sandeep","uttam nagar","Delhi"],
+    [7,"Saurabh Yadav","nangloi","Delhi"],
 ];
 
 
-foreach ($company["employees"] as $employee) {
 
-    echo  $employee["name"] . "<br>";
+        foreach($user as $users) {
+            echo  "ID:" . $users[0] . "<br>";
+            echo "Name:" . $users[1] . "<br>";
+            echo "Address:" . $users[2] . "<br>";
+            echo "City:" . $users[3] . "<br><br>";
+        }
 
 
-    foreach ($employee["skills"] as $skill) {
-        echo "-" .$skill."<br>";
-    }
 
-    echo "<br>";
-
-}
 
 
 
