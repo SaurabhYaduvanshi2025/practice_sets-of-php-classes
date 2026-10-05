@@ -50,13 +50,33 @@
 // myNumber();
 // echo $count;
 
-$a = 100;
-$b = 50;
+// $a = 10;
+// $b = 50;
 
-function myTest(){
+// function myTest(){
 
-  global $a, $b;
-  echo $c = $a + $b;
+//   global $a, $b;
+//   echo $c = $a + $b;
+// }
+// myTest();
+
+
+
+// function mytest(){
+//   return $GLOBALS['a'] + $GLOBALS['b'];
+// }
+// echo mytest();
+
+$users = [
+    ["name" => "Saurabh", "email" => "saurabh@gmail.com"],
+    ["name" => "Amit", "email" => "amit@gmail.com"]
+];
+
+foreach($users as $user){
+  echo "Name:" . $user['name'] . " Email: " . $user['email'] . "<br>";
+  echo "Name:" . $user['name'] . " Email: " . $user['email'] . "<br>";
 }
-myTest();
+
+
+
 ?>
