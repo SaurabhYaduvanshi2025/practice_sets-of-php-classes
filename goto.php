@@ -1,30 +1,25 @@
-<?php 
+<?
 
-// $age = 21;
+$enteredPins = [1111, 2222, 5555 , 6666];
+$correctPin = 5555;
 
-// if ($age <= 18) {
 
-//    goto minor;
-// }
-
-// echo "Your are Eligible to vote.";
-// exit;
+foreach($enteredPins as $index =>$pin){
+    $attempts = $index + 1;
 
 
 
-// minor:
-// echo "You are not Eligible to vote.";
-
-
-
-for ($i = 0; $i <=10; $i++) {
-    if ($i == 6){
-        goto Stop;
+    if($pin != $correctPin) {
+        echo "Attempt $attempt: Galat PIN ($pin) ❌<br>";
+        continue;
     }
-    echo "Number:" . $i . "<br>";
+
+    echo "Attempt $attempt: Sahi PIN mil gaya! ($pin) ✅<br>";
+    break;
+
 }
 
-Stop:
-echo "Loop stopped at number 4.";
 
-?>
+
+
+php?>
